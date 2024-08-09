@@ -15,8 +15,11 @@ class _CenterScreenState extends State<CenterScreen> {
   Widget build(BuildContext context) {
     return ListView(children: [
       Container(
-        child: Column(
-          children: [HomeDetails(), AboutMe(), Contact()],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 200),
+          child: Column(
+            children: [HomeDetails(), AboutMe(), Contact()],
+          ),
         ),
       ),
     ]);

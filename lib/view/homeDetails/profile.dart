@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/controller/functions/functions.dart';
 import 'package:my_portfolio/responsive/responsive.dart';
 
 class HomeDetails extends StatefulWidget {
@@ -57,20 +58,31 @@ class _HomeDetailsState extends State<HomeDetails> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            SmallFunctions.openLink(
+                                'https://www.linkedin.com/in/arjun-k-6a83042ab/');
+                          },
                           icon: Image.asset(
                             "asset/image/606491_linkedin_4096x4096.png",
                             scale: 80,
                           ),
                         ),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            SmallFunctions.openLink(
+                                'https://github.com/Arjun13k');
+                          },
                           icon: Image.asset(
                             "asset/image/GitHub Link.png",
                             scale: 2,
                           ),
                         ),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.mail))
+                        IconButton(
+                            onPressed: () {
+                              SmallFunctions.sendEmail(
+                                  'arjuarjun207@gmail.com');
+                            },
+                            icon: Icon(Icons.mail))
                       ],
                     )
                   ],

@@ -27,6 +27,16 @@ class _ContactState extends State<Contact> {
             color: CustomColors.primaryBlack,
             thickness: 2,
           ),
+          TextFormField(
+            mouseCursor: SystemMouseCursors.click,
+            keyboardType: TextInputType.name,
+            decoration: InputDecoration(
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+              filled: true,
+              //  enabledBorder: InputBorder.none
+            ),
+          )
         ],
       ),
     );

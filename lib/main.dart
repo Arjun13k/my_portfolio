@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/view/main/main_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyPortfolio());
 }
 
