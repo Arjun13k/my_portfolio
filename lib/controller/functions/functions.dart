@@ -51,7 +51,7 @@ class SmallFunctions {
   static Future<void> submitForm(Map<String, dynamic> formData) async {
     try {
       final response = await http.post(
-        Uri.parse('https://portfolio-18-t0im.onrender.com/api/submitMail'),
+        Uri.parse('https://portfolio-17-py4h.onrender.com/api/submitMail'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode(formData),
       );
