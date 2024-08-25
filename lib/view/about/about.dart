@@ -47,8 +47,9 @@ class AboutMe extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  // mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(
                     Skills.skills.length,
                     (index) => Padding(
@@ -161,8 +162,9 @@ class AboutMe extends StatelessWidget {
                 // ),
                 //   ,
                 // )
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: List.generate(
                     Skills.skills.length,
                     (index) => Padding(

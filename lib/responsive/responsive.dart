@@ -14,3 +14,19 @@ class ResponsiveScreen {
     return MediaQuery.sizeOf(context).width > 1000;
   }
 }
+
+// we can call  this on context.method/function
+extension responsive on BuildContext {
+  bool ismobile() {
+    return MediaQuery.sizeOf(this).width < 500;
+  }
+
+  bool isTab() {
+    return MediaQuery.sizeOf(this).width >= 500 &&
+        MediaQuery.sizeOf(this).width <= 1000;
+  }
+
+  bool isWindow() {
+    return MediaQuery.sizeOf(this).width > 1000;
+  }
+}

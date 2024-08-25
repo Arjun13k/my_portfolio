@@ -16,7 +16,7 @@ class HomeDetails extends StatefulWidget {
 class _HomeDetailsState extends State<HomeDetails> {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveScreen.isWindow(context)
+    return context.isWindow()
         ? Container(
             padding: EdgeInsets.only(top: 40),
             child: Row(
@@ -73,7 +73,7 @@ class _HomeDetailsState extends State<HomeDetails> {
                       ],
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "____________",
@@ -122,13 +122,17 @@ class _HomeDetailsState extends State<HomeDetails> {
                     )
                   ],
                 ),
-                Spacer(),
-                CircleAvatar(
-                  backgroundColor: Colors.transparent.withOpacity(.4),
-                  radius: 300,
-                  child: Image.asset(
-                    "asset/image/WhatsApp_Image_2024-08-11_at_23.05.31_b7c02688-removebg-preview.png",
-                    scale: 1,
+                Expanded(
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.transparent.withOpacity(.4),
+                      radius: 300,
+                      child: Image.asset(
+                        "asset/image/WhatsApp_Image_2024-08-11_at_23.05.31_b7c02688-removebg-preview.png",
+                        scale: 1,
+                      ),
+                    ),
                   ),
                 ),
               ],
