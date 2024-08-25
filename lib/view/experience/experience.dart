@@ -129,9 +129,9 @@ seamless user experiences''',
                         textAlign: TextAlign.start,
                       ),
                       ConstrainedBox(
-                        constraints: BoxConstraints(maxWidth: 400),
+                        constraints: BoxConstraints(maxWidth: 340),
                         child: Text(
-                          maxLines: 15,
+                          maxLines: 25,
                           textAlign: TextAlign.justify,
                           '''Developed cross-platform mobile application using flutter framework for ios and android platforms.Implement complex UI designs and animations using flutter widgets and custom packages.Integrated RESTful APIs and third-party services to fetch and display data in the app.Utilized statement techniques like provider,Riverpod and GetX for managing application state efficiently and expanding skills in backend development using Laravel and Php to full-stack applications. Adept at integrating front-end and back-end technologies to deliver
 seamless user experiences''',
