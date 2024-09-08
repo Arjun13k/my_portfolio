@@ -51,8 +51,7 @@ class SmallFunctions {
   static Future<void> submitForm(Map<String, dynamic> formData) async {
     try {
       final response = await http.post(
-        Uri.parse(
-            'https://portfolio-production-b2aa.up.railway.app/api/submitMail'),
+        Uri.parse('https://arjunk.free.nf/submitMail'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode(formData),
       );
