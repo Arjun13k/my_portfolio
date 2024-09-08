@@ -29377,7 +29377,7 @@ acQ(a){return A.aKn(a)},
 aKn(a){var s=0,r=A.N(t.H),q=1,p,o,n,m,l,k,j
 var $async$acQ=A.O(function(b,c){if(b===1){p=c
 s=q}while(true)switch(s){case 0:q=3
-m=A.fb("https://portfolio-production-b2aa.up.railway.app/api/submitMail",0,null)
+m=A.fb("https://arjunk.free.nf/submitMail",0,null)
 l=t.N
 l=A.ar(["Content-Type","application/json"],l,l)
 s=6
