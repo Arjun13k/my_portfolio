@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/Dummy_data/dummy_data.dart';
 import 'package:my_portfolio/global/custom_Color/custom_color.dart';
 import 'package:my_portfolio/responsive/responsive.dart';
 import 'package:my_portfolio/view/project/project_widget/project_widget.dart';
+import 'package:provider/provider.dart';
 
 class projectScreen extends StatefulWidget {
   const projectScreen({super.key});
@@ -14,6 +16,7 @@ class projectScreen extends StatefulWidget {
 class _projectScreenState extends State<projectScreen> {
   @override
   Widget build(BuildContext context) {
+    final details = Provider.of<ProjectDetails>(context);
     return Container(
       child: Column(
         children: [
@@ -33,13 +36,18 @@ class _projectScreenState extends State<projectScreen> {
           GridView(
               shrinkWrap: true,
               children: List.generate(
-                4,
-                (index) => ProjectWidget(),
+                details.projectTitle.length,
+                (index) => ProjectWidget(
+                  images: details.images[details.projectTitle[index]]
+                      .cast<String>(),
+                  link: details.source[details.projectTitle[index]],
+                  appTitle: details.projectTitle[index],
+                ),
               ),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
-                crossAxisCount: 2,
+                crossAxisCount: context.isWindow() ? 2 : 1,
               )),
         ],
       ),

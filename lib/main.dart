@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Dummy_data/dummy_data.dart';
 import 'package:my_portfolio/controller/home_contoller/home_contoller.dart';
 import 'package:my_portfolio/view/main/main_screen.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,9 @@ class MyPortfolio extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) => HomeScreenContoller(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ProjectDetails(),
         )
       ],
       child: MaterialApp(

@@ -3,9 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/controller/home_contoller/home_contoller.dart';
 import 'package:my_portfolio/global/custom_Button/custom_button.dart';
 import 'package:my_portfolio/responsive/responsive.dart';
-import 'package:my_portfolio/view/about/about.dart';
-import 'package:my_portfolio/view/contact/contact.dart';
-import 'package:my_portfolio/view/homeDetails/Home.dart';
 import 'package:provider/provider.dart';
 
 class NavBar extends StatefulWidget {
