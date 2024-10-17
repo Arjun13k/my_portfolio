@@ -34,12 +34,12 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                                 ))
                             .toList(),
                         options: CarouselOptions(
-                          height: 450,
+                          // height: 450,
                           autoPlay: true,
                           enlargeCenterPage: true,
                         ),
                       ),
-                      width: 300,
+                      // width: 300,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         // color: Colors.black,
@@ -55,12 +55,12 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                               ))
                           .toList(),
                       options: CarouselOptions(
-                        height: 180,
+                        // height: 180,
                         autoPlay: true,
                         enlargeCenterPage: true,
                       ),
                     ),
-                    width: 300,
+                    // width: 300,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       // color: Colors.black,
@@ -98,17 +98,17 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                       ),
                   itemCount: (widget.link as List).length),
             ),
-            Spacer(),
+            SizedBox(
+              height: 10,
+            ),
             Center(
-              child: Expanded(
-                child: Container(
-                  width: 350,
-                  height: 50,
-                  child: Center(child: Text("View on Github")),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.black.withOpacity(.2)),
-                ),
+              child: Container(
+                width: 350,
+                height: 50,
+                child: Center(child: Text("View on Github")),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.black.withOpacity(.2)),
               ),
             ),
             SizedBox(
